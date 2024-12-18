@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music.co</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="new.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-box">
+        <i class="fa-solid fa-xmark" id="cross-icon"></i>
+        <div class="home-box">
+          <div class="home">
+            <i class="fa-solid fa-house" style="background-color: #1a1818"></i>
+            <span>Home</span>
+          </div>
+
+          <div class="search">
+            <i
+              class="fa-solid fa-magnifying-glass textcolor"
+              style="background-color: #1a1818"
+            ></i>
+            <span class="textcolor">Search</span>
+          </div>
+        </div>
+        <div class="library">
+          <div class="lib-head color">
+            <div class="div color">
+              <i class="fa-solid fa-layer-group color"></i>
+              <span class="color">Your library</span>
+            </div>
+            <i class="fa-solid fa-plus color"></i>
+          </div>
+
+          <div class="lib-type color">
+            <span>Playlist</span>
+            <span>Artist</span>
+            <span>Poadcast</span>
+          </div>
+
+          <div class="lib-search color">
+            <i class="fa-solid fa-magnifying-glass color textcolor"></i>
+            <div class="search-text color">
+              <span class="color textcolor">All</span>
+              <i class="fa-solid fa-list color textcolor"></i>
+            </div>
+          </div>
+
+          <div class="lib-songs"></div>
+        </div>
+      </div>
+
+      <div class="right-box">
+        <div class="box-top color">
+          <div class="left-btn color">
+            <i class="fa-solid fa-bars" id="bars-icon"></i>
+            <img src="/assets/new_logo.png" alt="logo">
+          </div>
+
+          <div class="right-btn color">
+            <button class="b1">Sign up</button>
+            <button class="b2">Log in</button>
+          </div>
+        </div>
+
+        <div class="playlists color">
+          <h1 class="color">Top Playlists</h1>
+          <div class="cards color"><div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="playbar">
+      <div class="song-detail">
+        <div class="song-name"></div>
+
+        <div class="playbar-icons">
+          <button id="prev">
+            <i class="fa-solid fa-step-backward"></i>
+          </button>
+
+          <button id="play">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+
+          <button id="next">
+            <i class="fa-solid fa-step-forward"></i>
+          </button>
+        </div>
+
+        <div class="time-vol">
+          <div class="song-time"></div>
+          <div class="div">
+          <i class="fa-solid fa-volume-low"></i>
+          <input type="range" id="myRange" class="vol-seek">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="seekbar">
+        <i class="fa-solid fa-circle"></i>
+      </div>
+    </div>
+  </body>
+</html>

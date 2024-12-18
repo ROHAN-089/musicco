@@ -1,0 +1,528 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.color{
+    background-color: #1a1818;
+}
+.textcolor{
+    color: #a6a6a6;
+}
+*{
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+}
+
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+.border{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* left box styling*/
+.left-box {
+    width: 25vw;
+    position: relative;
+}
+
+.home-box{
+    background-color: #1a1818 ;
+    height: 120px;
+    align-content: center;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bolder;
+}
+
+.home-box span{
+    padding-left: 5px;
+    background-color: #1a1818;
+    
+}
+
+.home{
+    background-color: #1a1818;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.search{
+    background-color: #1a1818;
+    font-size: 1.2rem;
+    color: #a6a6a6;
+}
+
+.library{
+    background-color: #1a1818 ;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.lib-head{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+  
+}
+
+.lib-type{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.lib-type span{
+    margin: 5px;
+    padding: 10px;
+    background-color: #282828;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    
+}
+
+.lib-search{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #a6a6a6;
+}
+
+.lib-songs{
+    background-color: #1a1818;
+    height: 80%;
+}
+
+.song{
+    display: flex;
+    margin: 5px;
+    background-color: #282828;
+    border-radius: 2px;
+    padding: 5px;
+    gap: 5px;
+    cursor: pointer;
+    height: 55px;
+}
+
+.song:hover{
+    border: 1px solid #ffffff;
+}
+
+.song-info{
+    background-color: #282828;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+}
+
+
+.song i{
+    padding: 13px 10px;
+    background-color: #3d3a3a;
+    border-radius: 4px;
+}
+
+.song-info h3{
+    background-color: #282828;
+    size: 0.8rem;
+}
+
+.song-info p{
+    background-color: #282828;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: whitesmoke
+}
+
+#cross-icon{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: x-large;
+    cursor: pointer;
+    background-color: #1a1818;
+    display: none;
+}
+
+
+/* right box styling*/
+.right-box {
+    width: 75vw;
+    margin: 5px;
+    background-color: #1a1818;
+    border-radius: 5px;
+    
+}
+
+.box-top{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: #282828;
+}
+
+.left-btn{
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+}
+
+.right-btn{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+#bars-icon{
+    background-color: transparent;
+    font-size: x-large;
+    display: none;
+}
+
+.box-top i{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.right-btn button{
+     margin: 5px;
+     padding: 10px;
+     text-decoration: none; 
+     border-radius: 20px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+.right-btn button:hover{
+    background-color: #3d3a3a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.b2{
+    background-color: white;
+    color: black;
+}
+
+.playlists{
+    margin: 10px;
+    
+}
+
+.playlists h1{
+    margin: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 250px;
+    width: 180px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    background-color: #282828;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: #3d3a3a;
+    transform: scale(1.05);
+}
+
+.card:hover .img-box {
+    background-color: #3d3a3a;
+}
+
+.card:hover h2 {
+    background-color: #3d3a3a;
+}
+
+.card:hover p {
+    background-color: #3d3a3a;
+}
+
+
+.img-box{
+    background-color: #282828;
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.3s ease;
+
+}
+
+
+
+.card img{
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #282828;
+}
+
+.card h2{
+    margin: 0px 10px;
+    font-size: small;
+    background-color: #282828;
+    transition: all 0.3s ease;
+
+}
+
+
+.card p{
+    margin: 5px 10px;
+    font-size: x-small;
+    background-color: #282828;
+    font-weight: 300;
+    color: #a6a6a6;
+    transition: all 0.3s ease;
+
+}
+
+.img-box i{
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .img-box i{
+    opacity: 1;
+}
+
+.playbar{
+    position: fixed;
+    bottom: 0;  
+    width: 100%;
+    background-color: #1ed760;
+    padding: 20px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbar-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    
+}
+
+.playbar-icons  i{
+    margin: 0 10px;
+    background-color:  transparent;
+}
+
+.seekbar{
+    width: 40vw;
+    height: 3px;
+    background-color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.seekbar i{
+    font-size: x-small;
+    background-color: transparent;
+    position: relative;
+    bottom: 10px;
+    left: 0%;
+    transition: left 0.3s ease;
+}
+
+.song-detail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+}
+
+.song-name{
+    background-color: transparent;
+    width: 270px;
+}
+
+.time-vol{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 270px;
+}
+
+.song-time{
+    background-color: transparent;
+}
+
+.time-vol i{
+    background-color: transparent;
+}
+
+.song-name i{
+    background-color: #1ed75f60;
+    margin: 4px;
+}
+.playbar-icons button{
+    border: none;
+    font-size: large;
+    background-color: transparent !important;
+
+}
+
+.div{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Style the track */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+/* Style the thumb/handle */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: background-color .2s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: background-color .2s ease-in-out;
+}
+
+/* Change thumb color on hover */
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #45a049;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: #45a049;
+}
+
+/* Style when the range input is active */
+input[type="range"]:active::-webkit-slider-thumb {
+    background: #45a049;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+    background: #45a049;
+}
+
+/* Change the track opacity on hover */
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+@media (max-width: 1200px){
+    .left-box{
+       position: absolute;
+       left: -100%;
+       transition: all 0.3s ease;
+       width: 300px;
+       z-index: 1;
+    }
+
+    .right-box{
+        width: 100vw;
+    }
+
+    #cross-icon{
+        display: block;
+    }
+
+    #bars-icon{
+        display: block;
+    }
+
+    
+
+}
+
+@media (max-width: 600px){
+
+    .song-detail{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .time-vol{
+        flex-direction: column;
+    }
+
+    .seekbar{
+        width: 70vw;
+    }
+
+    .div{
+        display: none;
+    }
+  
+
+    .library{
+        height: 100%;
+    }
+
+    .left-box {
+        height: 100%;
+        position: absolute;
+        left: -100%;
+        transition: all 0.3s ease;
+        width: 300px;
+        z-index: 1;
+    }
+    
+
+}
+
